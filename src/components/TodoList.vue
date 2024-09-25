@@ -18,7 +18,7 @@ export default defineComponent({
 
     const modalVisible = ref(false);
     const edit = ref(false);
-    const form = ref({ label: 'New task', status: 'new' });
+    const form = ref({ id: 0, label: 'New task', status: 'new', created_at: '' });
 
     onMounted(() => {
       store.loadTasksFromLocalStorage();
